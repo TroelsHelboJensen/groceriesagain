@@ -19,7 +19,8 @@ public class GroceryList
         {
             //set previous array elements to temporary array's elements
             tempArr[i] = currentItemOrders[i];
-            //dunno yet
+            //after creating the new array that has a spot more than the old one
+            //set the new position to null, untill we have to use it
             tempArr[i + 1] = null;
         }
 
@@ -44,9 +45,10 @@ public class GroceryList
         return tempArr;
     }
 
+    //adjusted so its not less than, but less than or equal to ten
     public boolean noMoreThanTen()
     {
-        return groceryItemOrders.length < 10;
+        return groceryItemOrders.length <= 10;
     }
 
     /*public float getTotalCost()

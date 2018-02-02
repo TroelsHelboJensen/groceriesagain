@@ -4,16 +4,18 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-	// write your code here
+    public static void main(String[] args)
+    {
+	    //make a new scanner object to write with
         Scanner input = new Scanner(System.in);
-        GroceryList tmpList = new GroceryList();
-        GroceryItemOrder[] orders = new GroceryItemOrder[0];
+        //create a new grocerylist object
+        GroceryList groceryList = new GroceryList();
 
-        while(tmpList.noMoreThanTen())
+        //loop over the grocerylist array as long as it holds fewer objects than 10
+        while(groceryList.noMoreThanTen())
         {
-            orders = tmpList.addToGroceries(orders,input);
-            System.out.println(orders.length);
+            groceryList.groceryItemOrders = groceryList.addToGroceries(groceryList.groceryItemOrders,input);
+            System.out.println(groceryList.groceryItemOrders.length);
         }
 
 
