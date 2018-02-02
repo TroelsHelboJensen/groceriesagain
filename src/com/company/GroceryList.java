@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class GroceryList
 {
-    GroceryItemOrder[] groceryItemOrders;
+    public GroceryItemOrder[] groceryItemOrders = new GroceryItemOrder[0];
+
+    public int getGroceryItemOrders() {
+        return groceryItemOrders.length;
+    }
 
     public GroceryItemOrder[] addToGroceries(GroceryItemOrder[] currentItemOrders, Scanner input)
     {
@@ -34,9 +38,15 @@ public class GroceryList
         tempItemArr = new GroceryItemOrder(tmpinf[0], Integer.parseInt(tmpinf[1]),Float.parseFloat(tmpinf[2]));
         System.out.println("New order created " + tempItemArr);
 
-        tempArr[tempArr.length-1] = tempItemArr;  //martin was here (ノ͡° ͜ʖ ͡°)ノ︵┻┻
+        //minus one else it goes out of bounds
+        tempArr[tempArr.length - 1] = tempItemArr;
 
         return tempArr;
+    }
+
+    public boolean noMoreThanTen()
+    {
+        return groceryItemOrders.length < 10;
     }
 
     /*public float getTotalCost()
@@ -51,6 +61,6 @@ public class GroceryList
 
     @Override
     public String toString() {
-        return "There are: " + groceryItemOrders.length + " in this bag.";
+        return "There are: " + getGroceryItemOrders() + " in this bag.";
     }
 }
