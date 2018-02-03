@@ -51,18 +51,20 @@ public class GroceryList
         return groceryItemOrders.length <= 10;
     }
 
-    /*public float getTotalCost()
+    public float getTotalCost()
     {
         float totalCost = 0f;
 
-        for (int i = 0; i < groceryItemOrders.length; i++) {
-
+        for (int i = 0; i < groceryItemOrders.length; i++)
+        {
+            totalCost += groceryItemOrders[i].getTotalCost();
 
         }
-    }*/
+        return totalCost;
+    }
 
     @Override
     public String toString() {
-        return "There are: " + getGroceryItemOrders() + " in this bag.";
+        return "There are: " + getGroceryItemOrders() + " in this bag.\nWith a total price of " + getTotalCost();
     }
 }

@@ -15,7 +15,7 @@ public class Main {
         while(groceryList.noMoreThanTen())
         {
             groceryList.groceryItemOrders = groceryList.addToGroceries(groceryList.groceryItemOrders,input);
-            System.out.println(groceryList.groceryItemOrders.length);
+            System.out.println(groceryList);
         }
 
 
