@@ -5,3 +5,7 @@ Mango,5,10
 Tomato,10,2
 Grape,20,2
 Cucumber,10,3
+Paul,1,1
+Peter,2,2
+Hans,2,4
+Hi,1,1
