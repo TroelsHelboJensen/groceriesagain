@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Main {
 
+    /*
+    BUGS:
+    hvis der er mindre end 10 så adder den det dobbelt, altså hvis der er 7 så bliver det til 14
+    hvis man siger der skal være mere end 10 så kører den i uendeligt loop
+     */
+    
     public static void main(String[] args)
     {
         //filehandler
