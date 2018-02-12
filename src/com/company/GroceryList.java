@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class GroceryList
 {
+    /*
+    TODO:
+    add number of items from file to groceryItemOrders array
+
+     */
     public GroceryItemOrder[] groceryItemOrders = new GroceryItemOrder[0];
 
     public int getGroceryItemOrders() {

@@ -1,0 +1,7 @@
+Apples,5,10
+Bananas,3,20
+Lemon,2,15
+Mango,5,10
+Tomato,10,2
+Grape,20,2
+Cucumber,10,3
