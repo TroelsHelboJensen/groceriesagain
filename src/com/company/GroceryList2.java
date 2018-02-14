@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class GroceryList2
 {
@@ -11,7 +10,6 @@ public class GroceryList2
     {
         groceryItemOrders = new ArrayList<>();
     }
-    
     
     public int getGroceryItemOrders() {
         return groceryItemOrders.size();
@@ -23,8 +21,6 @@ public class GroceryList2
         groceryItemOrders.add(itemOrder);
     }
     
-    
-    //adjusted so its not less than, but less than or equal to ten
     public boolean noMoreThanTen()
     {
         return groceryItemOrders.size() < 10;

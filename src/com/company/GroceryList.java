@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class GroceryList
 {
     public GroceryItemOrder[] groceryItemOrders;
@@ -20,14 +18,10 @@ public class GroceryList
     public GroceryItemOrder[] addToGroceries(GroceryItemOrder itemOrder)
     {
         GroceryItemOrder[] temp = new GroceryItemOrder[groceryItemOrders.length +1];
-        for (int i = 0; i < groceryItemOrders.length; i++)
+        for (int i = 0; i < temp.length; i++)
         {
-            temp[i] = groceryItemOrders[i];
-            temp[i+1] = null;
+            temp[i] = itemOrder;
         }
-        
-        temp[temp.length-1] = itemOrder;
-        
         return temp;
     }
     
