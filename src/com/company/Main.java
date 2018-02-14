@@ -15,7 +15,7 @@ public class Main {
         //filehandler
         FileThingy fileThingy = new FileThingy();
         //create a new grocerylist object
-        GroceryList groceryList = new GroceryList();
+        GroceryList2 groceryList = new GroceryList2();
 
         //loop over the grocerylist array as long as it holds fewer objects than 10
         while(groceryList.noMoreThanTen())

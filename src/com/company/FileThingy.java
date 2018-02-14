@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class FileThingy
 {
-    public void readGroceryListFromFile(String path,GroceryList groceryList)
+    public void readGroceryListFromFile(String path,GroceryList2 groceryList)
     {
         File file = new File(path);
         GroceryItemOrder groceryItemOrder;
@@ -19,7 +19,8 @@ public class FileThingy
 
                 String[] groceryItems = nextLine.split(",");
                 groceryItemOrder = new GroceryItemOrder(groceryItems[0], Integer.parseInt(groceryItems[1]),Float.parseFloat(groceryItems[2]));
-                groceryList.groceryItemOrders = groceryList.addToGroceries(groceryItemOrder);
+                //groceryList.groceryItemOrders = groceryList.addToGroceries(groceryItemOrder);
+                groceryList.addToGroceries(groceryItemOrder);
             }
             scanner.close();
         }

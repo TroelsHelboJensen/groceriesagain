@@ -35,7 +35,7 @@ public class GroceryList
     //adjusted so its not less than, but less than or equal to ten
     public boolean noMoreThanTen()
     {
-        return groceryItemOrders.length <= 10;
+        return groceryItemOrders.length < 10;
     }
 
     public float getTotalCost()
